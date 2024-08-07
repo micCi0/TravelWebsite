@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background: url("./access/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+header nav{
+    width: 100%;
+    padding: 34px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li a{
+    margin: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 40px 30px;
+    transition: all ease-in-out 0.55s;
+}
+header nav ul li a.active,header nav ul li a.link:hover{
+    background: #1a5ec4;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.logo{
+    position: absolute;
+    left: 10px;
+    top: -22px;
+}
+.logo img{
+    width: 160px;
+    height: 150px;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 0 12%;
+}
+.home .home-text h1{
+    font-size: 58px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+}
+.home .home-text h1 span{
+    color: #1a5ec4;
+}
+.home .home-text p{
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 25px;
+    width: 90%;
+}
+.home .home-text form input{
+    padding: 9px 7px;
+    width: 350px;
+    border: 1px solid #dfdfdf;
+    font-size: 15px;
+    outline: none;
+}
+.home .home-text form button{
+    cursor: pointer;
+    padding: 10px 7px;
+    font-size: 15px;
+    width: 130px;
+    background: #1a5ec4;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    left: -5px;
+}
+
+.home .home-image img{
+    width: 500px;
+}
